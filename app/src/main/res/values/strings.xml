@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">geomark</string>
+
+    <string-array name="shoptype">
+        <item>General</item>
+        <item>Garments</item>
+        <item>Fancy</item>
+        <item>Automobile</item>
+        <item>Stationary</item>
+    </string-array>
+
+    <string-array name="Products">
+        <item>Pen</item>
+        <item>T-shirt</item>
+        <item>Samsung TV</item>
+        <item>Dell Laptops</item>
+        <item>Fiber Chairs</item>
+    </string-array>
+
+
+
+
+    <string-array name="vendtype">
+        <item>Normal</item>
+        <item>Premium</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".login">
+
+    <TextView
+
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ff4500"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="@font/arbutus" />
+
+    <Button
+        android:id="@+id/vender_login"
+        android:layout_width="351dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="56dp"
+        android:text="VENDOR"
+        android:textColor="#051492"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:onClick="Vendor_login"/>
+
+    <Button
+        android:id="@+id/consumer_signup"
+        android:layout_width="351dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="251dp"
+        android:text="CONSUMER"
+        android:textColor="#051492"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/vender_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vender_login"
+        app:layout_constraintTop_toBottomOf="@+id/vender_login" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="351dp"
+        android:layout_height="251dp"
+        app:layout_constraintEnd_toEndOf="@+id/vender_login"
+        app:layout_constraintStart_toStartOf="@+id/vender_login"
+        app:layout_constraintTop_toBottomOf="@+id/vender_login"
+        app:srcCompat="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="176dp"
+        android:text="Entire Market in your Pocket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/consumer_signup"
+        app:layout_constraintStart_toStartOf="@+id/consumer_signup"
+        app:layout_constraintTop_toBottomOf="@+id/consumer_signup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

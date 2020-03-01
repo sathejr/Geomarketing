@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="VENDER SIGNUP"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ff4500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="@font/arbutus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <EditText
+        android:id="@+id/editText_emailId"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="EMAIL ID"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editText_emailId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_emailId"
+        app:layout_constraintTop_toBottomOf="@+id/editText_emailId" />
+
+    <EditText
+        android:id="@+id/editText_rePassword"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="RE ENTER PASSWORD"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="@+id/editText_password"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/editText_password"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/Products"
+        android:layout_width="144dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/editText_rePassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_rePassword"
+        app:layout_constraintTop_toBottomOf="@+id/editText_rePassword">
+
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Shop Type"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/Products"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="@+id/editText_rePassword"
+        app:layout_constraintTop_toBottomOf="@+id/editText_rePassword" />
+
+    <EditText
+        android:id="@+id/editText_gstNumber"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="GST NUMBER"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/editText_rePassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_rePassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/editText_licenseNumber"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="LICENSE NUMBER"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editText_gstNumber"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/editText_gstNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editText_gstNumber" />
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="ADDRESS OF SHOP"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/editText_licenseNumber"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/editText_licenseNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editText_licenseNumber" />
+
+    <Button
+        android:id="@+id/btn_vendSignUp"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:background="#F3D1D1"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#051492"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address"
+        app:layout_constraintVertical_bias="0.103"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_location"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="37dp"
+        android:gravity="center_horizontal"
+        android:text="Entire Market in your Pocket"
+        android:textAlignment="center"
+        app:fontFamily="@font/walter_turncoat"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
